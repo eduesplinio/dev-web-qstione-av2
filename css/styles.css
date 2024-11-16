@@ -102,12 +102,12 @@ footer {
 }
 
 .form-buttons button[type="submit"] {
-    background-color: #333;
+    background-color: #006B64;
     color: #fff;
 }
 
 .iframe-button {
-    background-color: #333;
+    background-color: #006B64;
     color: #fff;
 }
 
@@ -173,9 +173,11 @@ footer {
     padding: 10px 0;
 }
 
-.avaliacoes-list li ul li:first-child {
-    border-top: none;
+.avaliacoes-list li ul li:hover {
+    background-color: #f0f0f0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
+
 
 strong {
     color: #333;
@@ -195,10 +197,40 @@ em {
     border: 1px solid #ddd;
     border-radius: 5px;
     margin-bottom: 20px;
-    padding: 15px;
+    padding: 20px;
 }
 
 .avaliacoes-revisao-list > li:hover {
     background-color: #f0f0f0;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.revisar-button {
+    background-color: #006B64;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    padding: 10px 15px;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+.revisar-button:hover {
+    background-color: #2b9992;
+}
+
+.visualizar-button {
+    background-color: #006B64;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    padding: 10px 15px;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+.visualizar-button:hover {
+    background-color: #2b9992;
 }
