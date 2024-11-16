@@ -22,3 +22,8 @@ function loadHead(filePath) {
 document.addEventListener('DOMContentLoaded', function() {
     loadHead('head.html');
 });
+
+function playAudio() {
+    var audio = document.getElementById('audio-frame');
+    audio.play();
+}

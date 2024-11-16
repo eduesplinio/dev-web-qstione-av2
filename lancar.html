@@ -3,17 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lançar Avaliações - Questione</title>
+    <title>Criar Avaliações - Questione</title>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="icon" href="img/unifeso-logo.svg" type="image/png">
 </head>
 <body>
     <div id="header"></div>
     <main>
-        <h2>Lançar Avaliações</h2>
-        <p>Lista de avaliações para lançamento.</p>
+        <h2>Nova Avaliação</h2>
+        <p>Lista de questões cadastradas para criar uma avaliação:</p>
+        <table class="questoes-table">
+            <thead>
+                <tr>
+                    <th>Título</th>
+                    <th>Descrição</th>
+                    <th>Tipo</th>
+                    <th>Disciplina</th>
+                    <th>Selecionar</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Exemplo de questão cadastrada -->
+                <tr>
+                    <td>Questão 1</td>
+                    <td>Descrição da questão 1</td>
+                    <td>Múltipla Escolha</td>
+                    <td>Arquitetura de Computadores</td>
+                    <td><input type="checkbox" name="questao1"></td>
+                </tr>
+                <tr>
+                    <td>Questão 2</td>
+                    <td>Descrição da questão 2</td>
+                    <td>Dissertativa</td>
+                    <td>Desenvolvimento Web e IHC</td>
+                    <td><input type="checkbox" name="questao2"></td>
+                </tr>
+                <!-- Adicione mais questões conforme necessário -->
+            </tbody>
+        </table>
+        <form class="form-lancar">
+            <div class="form-group">
+                <label for="titulo-avaliacao">Título da Avaliação:</label>
+                <input type="text" id="titulo-avaliacao" name="titulo-avaliacao" required>
+            </div>
+            <div class="form-group">
+                <label for="data-avaliacao">Data da Avaliação:</label>
+                <input type="date" id="data-avaliacao" name="data-avaliacao" required>
+            </div>
+            <div class="form-buttons">
+                <button type="submit">Lançar Avaliação</button>
+                <button type="reset">Limpar</button>
+            </div>
+        </form>
     </main>
-
     <div id="footer"></div>
     <script src="js/scripts.js"></script>
 </body>
