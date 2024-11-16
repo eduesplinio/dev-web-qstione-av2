@@ -144,3 +144,61 @@ footer {
     background-color: #ccc;
     color: #333;
 }
+
+.avaliacoes-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.avaliacoes-list > li {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    padding: 15px;
+}
+
+.avaliacoes-list h3 {
+    margin-top: 0;
+    color: #006B64;
+}
+
+.avaliacoes-list ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.avaliacoes-list li ul li {
+    border-top: 1px solid #ddd;
+    padding: 10px 0;
+}
+
+.avaliacoes-list li ul li:first-child {
+    border-top: none;
+}
+
+strong {
+    color: #333;
+}
+
+em {
+    color: #666;
+}
+
+.avaliacoes-revisao-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.avaliacoes-revisao-list > li {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    padding: 15px;
+}
+
+.avaliacoes-revisao-list > li:hover {
+    background-color: #f0f0f0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
